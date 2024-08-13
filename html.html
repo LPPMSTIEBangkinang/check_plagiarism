@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check Plagiarisme</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-image"></div>
+    <div class="container">
+        <form id="thesisForm">
+            <h1>Formulir Cek Plagiarisme</h1> 
+            Skripsi / Thesis / Disertasi / Artikel / Buku / dll
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="fullname">Nama Lengkap :</label>
+            <input type="text" id="fullname" name="fullname" required>
+
+            <label for="studentID">Nomor Pokok Mahasiswa :</label>
+            <input type="number" id="studentID" name="studentID" required>
+
+            <label for="whatsapp">Nomor Whatsapp :</label>
+            <input type="number" id="whatsapp" name="whatsapp" pattern="[0-9]{10,13}" required>
+
+            <label for="program">Program Studi :</label>
+            <select id="program" name="program" required>
+                <option value="S1 Manajemen">S1 Manajemen</option>
+                <option value="S1 Akuntansi">S1 Akuntansi</option>
+                <option value="S2 Manajemen">S2 Manajemen</option>
+            </select>
+
+            <label for="concentration">Konsentrasi :</label>
+            <select id="concentration" name="concentration" required>
+                <option value="Manajemen SDM">Manajemen SDM</option>
+                <option value="Manajemen Pemasaran">Manajemen Pemasaran</option>
+                <option value="Manajemen Operasi">Manajemen Operasi</option>
+                <option value="Manajemen Keuangan">Manajemen Keuangan</option>
+                <option value="Akuntansi Manajemen">Akuntansi Manajemen</option>
+                <option value="Akuntansi Keuangan">Akuntansi Keuangan</option>
+            </select>
+
+            <label for="title">Judul Skripsi/Thesis :</label>
+            <input type="text" id="title" name="title" required>
+
+            <label for="file">Upload File Skripsi/Thesis/Disertasi/Artikel/Buku/dll (dalam bentuk pdf) :</label>
+            <input type="file" id="file" name="file" accept="application/pdf" required>
+
+            <button type="submit">Kirim</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
